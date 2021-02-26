@@ -1,0 +1,94 @@
+{
+  "nodes": {
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1614191423,
+        "narHash": "sha256-As8TFDUW6CMCN5zlw5dVnZiwakO1cRKYPk64rsr32uU=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "f6b5bfdb470d60a876992749d0d708ed7b6b56ca",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs_2": {
+      "locked": {
+        "lastModified": 1608904536,
+        "narHash": "sha256-gU6eszXC/3njk9L1XdQq6tlmD1n/nl84WG99H9a6O0s=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "be0b453d7c7eee2090962c9a83749b024ff9acf5",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "nixpkgs": "nixpkgs",
+        "utils": "utils",
+        "zig": "zig"
+      }
+    },
+    "utils": {
+      "locked": {
+        "lastModified": 1610051610,
+        "narHash": "sha256-U9rPz/usA1/Aohhk7Cmc2gBrEEKRzcW4nwPWMPwja4Y=",
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "rev": "3982c9903e93927c2164caa727cd3f6a0e6d14cc",
+        "type": "github"
+      },
+      "original": {
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "type": "github"
+      }
+    },
+    "utils_2": {
+      "locked": {
+        "lastModified": 1605370193,
+        "narHash": "sha256-YyMTf3URDL/otKdKgtoMChu4vfVL3vCMkRqpGifhUn0=",
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "rev": "5021eac20303a61fafe17224c087f5519baed54d",
+        "type": "github"
+      },
+      "original": {
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "type": "github"
+      }
+    },
+    "zig": {
+      "inputs": {
+        "nixpkgs": "nixpkgs_2",
+        "utils": "utils_2"
+      },
+      "locked": {
+        "lastModified": 1613607805,
+        "narHash": "sha256-ZxVpPA1+BY8ogZfY1je+HSrLv0msMIF0HFJ+791B8PE=",
+        "ref": "master",
+        "rev": "0b676e8085591d9c911194fc364487d7227d86e3",
+        "revCount": 12,
+        "type": "git",
+        "url": "https://git.sr.ht/~dbuckley/zig-flake"
+      },
+      "original": {
+        "type": "git",
+        "url": "https://git.sr.ht/~dbuckley/zig-flake"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
